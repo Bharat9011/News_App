@@ -5,4 +5,7 @@ class AppUrl {
 
   static final String get_top_headlines =
       "$hostName/everything?domains=wsj.com&apiKey=${KeyServices.baseUrl}";
+
+  static final String search_news =
+      "${AppUrl.hostName}/everything?q=";
 }

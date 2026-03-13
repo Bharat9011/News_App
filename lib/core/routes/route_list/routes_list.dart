@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/pages/screen/home_screen.dart';
+import 'package:news_app/pages/screen/search_news.dart';
 import 'package:news_app/pages/screen/view_news_artical.dart';
 
 Map<String, WidgetBuilder> pages = {
@@ -16,4 +17,5 @@ Map<String, WidgetBuilder> pages = {
       url: args["url"],
     );
   },
+  "/screen/searchnews": (context) => const SearchScreen(),
 };

@@ -89,7 +89,9 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
     super.dispose();
   }
 
-  void _toggleSearch() {}
+  void _toggleSearch() {
+    Navigator.pushNamed(context, "/screen/searchnews");
+  }
 
   Future<void> _handleRefresh() async {
     if (_isRefreshing) return;
