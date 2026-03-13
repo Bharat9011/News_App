@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:news_app/pages/screen/LoginScreen.dart';
 import 'package:news_app/pages/screen/home_screen.dart';
+import 'package:news_app/pages/screen/register_screen.dart';
 import 'package:news_app/pages/screen/search_news.dart';
 import 'package:news_app/pages/screen/view_news_artical.dart';
 
 Map<String, WidgetBuilder> pages = {
-  "/": (context) => const HomeScreen(),
+  "/": (context) => const LoginScreen(),
+  "/register": (context) => const RegisterScreen(),
+  "/homeScreen": (context) => const HomeScreen(),
   "/screen/viewnewsartical": (context) {
     final args =
         ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>;

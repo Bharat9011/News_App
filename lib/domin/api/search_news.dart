@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:http/http.dart' as http;
 import 'package:news_app/domin/app_url.dart';
 import 'package:news_app/services/key_services.dart';
